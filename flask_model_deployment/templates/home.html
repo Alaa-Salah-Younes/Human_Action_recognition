@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> image classification App </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body style="background: url(static/css/41.jpg) no-repeat center center fixed;">
+
+<header style="background:black">
+    <ul class="container" >
+         <div id = "brandname" style="padding:0px;margin:0px ; font-size: 40px; color:white; "> ML App </div>
+        <h2 style="padding:0px;margin:20px;font-size:60px;color:white;text-align:center; "> Activity classification</h2>
+    </ul>
+</header>
+
+<div class="ml-container" style="  display: block; margin-left:600px; margin-right: auto; width:50%;">
+
+    <form action= "{{url_for('predict')}}" method="POST">
+        <p style="color:white; padding-left:10px;margin-top:10px ; font-size: 20px;">Enter the youtube video link here : </p>
+        <textarea name="urllink" rows="4" cols="50"></textarea>
+        <br/>
+        <input type="submit" class="btn-info" value="Classify">
+    </form>
+
+</div>
+
+
+
+</body>
+</html>
