@@ -40,13 +40,13 @@ def predict():
     global class_list
     class_list = ['push up', 'raising eye brows', 'celebrating', 'break dancing', 'climbing a rope', 'riding scooter', \
                   'calligraphy', 'clay pottery making', 'golf driving', 'eating icecream', 'cooking on campfire']
-    json_file = open('C:\\Users\\DELL\\Desktop\\technocolabs\\10classes_CV_CNN\\final_version\\flask_deploy_the_model\\Data\\model552021.json', 'r')
+    json_file = open('C:\\Users\\DELL\\Desktop\\technocolabs\\10classes_CV_CNN\\final_version\\flask_model_deployment\\Data\\model552021.json', 'r')
     loaded_model_json = json_file.read()
     json_file.close()
     global loaded_model
     loaded_model = model_from_json(loaded_model_json)
     # load weights into new model
-    loaded_model.load_weights("C:\\Users\\DELL\\Desktop\\technocolabs\\10classes_CV_CNN\\final_version\\flask_deploy_the_model\Data\\Model5.h5")
+    loaded_model.load_weights("C:\\Users\\DELL\\Desktop\\technocolabs\\10classes_CV_CNN\\final_version\\flask_model_deployment\Data\\Model5.h5")
     loaded_model.compile(loss='categorical_crossentropy', optimizer='Adam', metrics=['accuracy'])
     print("Loaded model from disk")
     if request.method == "POST":
