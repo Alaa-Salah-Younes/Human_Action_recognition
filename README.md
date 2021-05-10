@@ -64,11 +64,11 @@ The output of these networks is often one or more fully connected layers that in
 
 # Model evaluation results 
 
-- **Total Loss vs Total Validation Loss **
+- **Total Loss vs Total Validation Loss**
 
 ![Total Loss vs Total Validation Loss](https://user-images.githubusercontent.com/71146628/117591052-cbc37e80-b132-11eb-8a3c-57fe3f5fae84.png)
 
--**Total Accuracy vs Total Validation Accuracy **
+- **Total Accuracy vs Total Validation Accuracy**
 
 ![Total Accuracy vs Total Validation Accuracy](https://user-images.githubusercontent.com/71146628/117591034-a46cb180-b132-11eb-881c-b308a6de45d3.png)
 
