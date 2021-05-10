@@ -9,6 +9,34 @@ They may also be more focused activities such as those types of activities perfo
 The sensor data may be remotely recorded, such as video, radar, or other wireless methods.
 Alternately, data may be recorded directly on the subject such as by carrying custom hardware or smart phones that have accelerometers and gyroscopes.
 
+We will discover the problem of human activity recognition and the deep learning methods that are achieving state-of-the-art performance on this problem.
+
+  - Activity recognition is the problem of predicting the movement of a person, often indoors, based on sensor data, such as an accelerometer in a smartphone.
+  - Streams of sensor data are often split into subs-sequences called windows, and each window is associated with a broader activity, called a sliding window approach.
+
+  - Convolutional neural networks and long short-term memory networks, and perhaps both together, are best suited to learning features from raw sensor data and predicting the       associated movement.
+
+
+## Convolutional Neural Network Models
+Convolutional Neural Network models, or CNNs for short, are a type of deep neural network that were developed for use with image data, e.g. such as handwriting recognition.
+
+They have proven very effective on challenging computer vision problems when trained at scale for tasks such as identifying and localizing objects in images and automatically describing the content of images.
+
+They are models that are comprised of two main types of elements: convolutional layers and pooling layers.
+
+Convolutional layers read an input, such as a 2D image or a 1D signal, using a kernel that reads in small segments at a time and steps across the entire input field. Each read results in an the input that is projected onto a filter map and represents an internal interpretation of the input.
+
+Pooling layers take the feature map projections and distill them to the most essential elements, such as using a signal averaging or signal maximizing process.
+
+The convolution and pooling layers can be repeated at depth, providing multiple layers of abstraction of the input signals.
+
+The output of these networks is often one or more fully connected layers that interpret what has been read and map this internal representation to a class value.
+
+
+
+
+
+
 **The link bellow contains a dataset for our model:**
  - **This dataset contains 11 folders for different activities, each folder contains allmost 2500 images**
 
